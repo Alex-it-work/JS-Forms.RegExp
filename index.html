@@ -7,71 +7,83 @@
     <title>DOM</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="./assets/js/index.js"></script>
   </head>
   <body>
-    <form action="#" method="GET">
+    <form action="#" method="POST">
       <fieldset>
         <h1>Contact Form</h1>
         <h2>Please fill in you information and we'll be sending your order.</h2>
         <label>
           <span>Your name</span>
-          <input
-            type="text"
-            placeholder="First name"
-            autofocus
-            pattern="[A-Z][a-z]{0,19}(-[A-Z][a-z]{0,19})?"
-          />
-          <input
-            type="text"
-            placeholder="Last name"
-            pattern="[A-Z][a-z]{0,19}(-[A-Z][a-z]{0,19})?"
-          />
+          <div>
+            <input
+              type="text"
+              placeholder="First name"
+              autofocus
+              pattern="[A-Z][a-z]{0,19}(-[A-Z][a-z]{0,19})?"
+            />
+            <input
+              type="text"
+              placeholder="Last name"
+              pattern="[A-Z][a-z]{0,19}(-[A-Z][a-z]{0,19})?"
+            />
+          </div>
         </label>
         <label>
           <span>Your email</span>
-          <input type="email" placeholder="your_mail@mail.com" />
+          <div><input type="email" placeholder="your_mail@mail.com" /></div>
         </label>
         <label>
           <span>Phone *</span>
-          <input
-            type="tel"
-            maxlength="3"
-            minlength="3"
-            required
-            placeholder="000"
-          />
-          <input
-            type="tel"
-            maxlength="3"
-            minlength="3"
-            required
-            placeholder="000"
-          />
-          <input
-            type="tel"
-            maxlength="4"
-            minlength="4"
-            required
-            placeholder="0000"
-          />
+          <div>
+            <input
+              type="tel"
+              maxlength="3"
+              minlength="3"
+              required
+              pattern="0.*"
+              placeholder="000"
+            />
+            <input
+              type="tel"
+              maxlength="3"
+              minlength="3"
+              required
+              placeholder="000"
+            />
+            <input
+              type="tel"
+              maxlength="4"
+              minlength="4"
+              required
+              placeholder="0000"
+            />
+          </div>
         </label>
         <label>
           <span>Message subject *</span>
-          <select name="select subject">
-            <option value="value1">Value 1</option>
-            <option value="value2">Value 2</option>
-            <option value="value3">Value 3</option>
-            <option value="other" selected>Other</option>
-          </select>
+          <div>
+            <select name="select subject">
+              <option value="value1">Value 1</option>
+              <option value="value2">Value 2</option>
+              <option value="value3">Value 3</option>
+              <option value="other" selected>Other</option>
+            </select>
+          </div>
         </label>
         <label>
           <span>Message *</span>
-          <input type="text" required maxlength="3000" />
+          <div><input class="msg" type="text" required maxlength="3000" /></div>
         </label>
-        <hr />
-        <label>
-          <input type="button" value="SUBMIT FORM" />
+
+        <label
+          ><hr />
+          <div><input class="btn" type="submit" value="SUBMIT FORM" /></div>
         </label>
       </fieldset>
     </form>
