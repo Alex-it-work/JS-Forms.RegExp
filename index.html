@@ -14,78 +14,82 @@
     <script defer src="./assets/js/index.js"></script>
   </head>
   <body>
-    <form action="#" method="POST">
-      <fieldset>
-        <h1>Contact Form</h1>
-        <h2>Please fill in you information and we'll be sending your order.</h2>
-        <label>
-          <span>Your name</span>
-          <div>
-            <input
-              type="text"
-              placeholder="First name"
-              autofocus
-              pattern="[A-Z][a-z]{0,19}(-[A-Z][a-z]{0,19})?"
-            />
-            <input
-              type="text"
-              placeholder="Last name"
-              pattern="[A-Z][a-z]{0,19}(-[A-Z][a-z]{0,19})?"
-            />
-          </div>
-        </label>
-        <label>
-          <span>Your email</span>
-          <div><input type="email" placeholder="your_mail@mail.com" /></div>
-        </label>
-        <label>
-          <span>Phone *</span>
-          <div>
-            <input
-              type="tel"
-              maxlength="3"
-              minlength="3"
-              required
-              pattern="0.*"
-              placeholder="000"
-            />
-            <input
-              type="tel"
-              maxlength="3"
-              minlength="3"
-              required
-              placeholder="000"
-            />
-            <input
-              type="tel"
-              maxlength="4"
-              minlength="4"
-              required
-              placeholder="0000"
-            />
-          </div>
-        </label>
-        <label>
-          <span>Message subject *</span>
-          <div>
-            <select name="select subject">
-              <option value="value1">Value 1</option>
-              <option value="value2">Value 2</option>
-              <option value="value3">Value 3</option>
-              <option value="other" selected>Other</option>
-            </select>
-          </div>
-        </label>
-        <label>
-          <span>Message *</span>
-          <div><input class="msg" type="text" required maxlength="3000" /></div>
-        </label>
+    <main>
+      <h1>Contact Form</h1>
+      <h2>Please fill in you information and we'll be sending your order.</h2>
+      <form action="#" method="POST">
+        <fieldset>
+          <label>
+            <span>Your name</span>
+            <div>
+              <input
+                type="text"
+                placeholder="First name"
+                autofocus
+                pattern="[A-Z][a-z]{0,19}(-[A-Z][a-z]{0,19})?"
+              />
+              <input
+                type="text"
+                placeholder="Last name"
+                pattern="[A-Z][a-z]{0,19}(-[A-Z][a-z]{0,19})?"
+              />
+            </div>
+          </label>
+          <label>
+            <span>Your email</span>
+            <div><input type="email" placeholder="your_mail@mail.com" /></div>
+          </label>
+          <label>
+            <span>Phone *</span>
+            <div>
+              <input
+                type="tel"
+                maxlength="3"
+                minlength="3"
+                required
+                pattern="0.*"
+                placeholder="000"
+              />
+              <input
+                type="tel"
+                maxlength="3"
+                minlength="3"
+                required
+                placeholder="000"
+              />
+              <input
+                type="tel"
+                maxlength="4"
+                minlength="4"
+                required
+                placeholder="0000"
+              />
+            </div>
+          </label>
+          <label>
+            <span>Message subject *</span>
+            <div>
+              <select name="select subject">
+                <option value="value1">Value 1</option>
+                <option value="value2">Value 2</option>
+                <option value="value3">Value 3</option>
+                <option value="other" selected>Other</option>
+              </select>
+            </div>
+          </label>
+          <label>
+            <span>Message *</span>
+            <div>
+              <input class="msg" type="text" required maxlength="3000" />
+            </div>
+          </label>
 
-        <label class="btnLabel">
-          <hr />
-          <div><input class="btn" type="submit" value="SUBMIT FORM" /></div>
-        </label>
-      </fieldset>
-    </form>
+          <label class="btnLabel">
+            <hr />
+            <div><input class="btn" type="submit" value="SUBMIT FORM" /></div>
+          </label>
+        </fieldset>
+      </form>
+    </main>
   </body>
 </html>
